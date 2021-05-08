@@ -272,3 +272,7 @@ console.log(fakeUsers[0]);
 for(let i = 0; i < fakeUsers.length; i++){
     console.log(fakeUsers[i].name);
 }
+
+fetch('https://jsonplaceholder.typicode.com/users')
+    .then(response => response.json())
+    .then(data => console.log(data));
